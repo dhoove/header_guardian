@@ -96,7 +96,7 @@ def edit_or_create_guard(output, input, name, create, linesep=os.linesep):
     if not success:
         if create:
             logger.warning("Creating new guard: {}".format(input))
-            create_new_guard(input, lines, name, linesep)
+            create_new_guard(output, lines, name, linesep)
             success = True
     else:
         write_output(output, new_lines)
